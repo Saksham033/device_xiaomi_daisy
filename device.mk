@@ -111,6 +111,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Offmode charging
+PRODUCT_PACKAGES += \
+    chargeonlymode
+
 # QCOM BOOST
 PRODUCT_BOOT_JARS += \
     QPerformance \
