@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "gitlab",
+    "repository":  "ZJRDroid/device_xiaomi_daisy_gcam",
+    "target_path": "device/xiaomi/daisy/gcam",
+    "branch": "pie"
+  }
+]

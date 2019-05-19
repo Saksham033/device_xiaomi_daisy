@@ -51,7 +51,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GCamera
 
 # Init scripts
 PRODUCT_PACKAGES += \
