@@ -8,3 +8,8 @@ on init
     mount none /system/lib/android.frameworks.sensorservice@1.0-v27.so /vendor/lib/android.frameworks.sensorservice@1.0-v27.so bind
     mount none /system/lib/libvidhance_gyro.so /vendor/lib/libvidhance_gyro.so bind
     mount none /system/lib64/android.frameworks.sensorservice@1.0-v27.so /vendor/lib64/android.frameworks.sensorservice@1.0-v27.so bind
+
+    # Dirac Blobs
+    mount none /system/lib/soundfx/libdirac.so /vendor/lib/soundfx/libdirac.so bind
+    mount none /system/lib/libDiracAPI_SHARED.so /vendor/lib/libDiracAPI_SHARED.so bind
+    mount none /system/etc/diracmobile.config /vendor/etc/diracmobile.config bind
