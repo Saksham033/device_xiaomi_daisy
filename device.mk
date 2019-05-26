@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8953
+    power.qcom
 
 # Offmode charging
 PRODUCT_PACKAGES += \

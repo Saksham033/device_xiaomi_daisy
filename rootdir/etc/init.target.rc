@@ -13,3 +13,7 @@ on init
     mount none /system/lib/soundfx/libdirac.so /vendor/lib/soundfx/libdirac.so bind
     mount none /system/lib/libDiracAPI_SHARED.so /vendor/lib/libDiracAPI_SHARED.so bind
     mount none /system/etc/diracmobile.config /vendor/etc/diracmobile.config bind
+
+    # Power HAL
+    mount none /system/lib/hw/power.qcom.so /vendor/lib/hw/power.qcom.so bind
+    mount none /system/lib64/hw/power.qcom.so /vendor/lib64/hw/power.qcom.so bind
