@@ -17,6 +17,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.display.umax=1920x1080 \
+    persist.camera.CDS=off \
+    persist.camera.video.CDS=off \
     persist.vendor.camera.display.lmax=1280x720 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp,com.intsig.camscanner \
