@@ -564,4 +564,7 @@
 
    <!-- Whether the always on display mode is available. -->
    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Enable system navigation keys. -->
+    <bool name="config_supportSystemNavigationKeys">true</bool>
 </resources>
