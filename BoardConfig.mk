@@ -122,7 +122,7 @@ AB_OTA_UPDATER := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Power
-TARGET_USES_INTERACTION_BOOST := true
+#TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 
 # QCOM
