@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_effects.xml:system/etc/audio_effects.xml
+    $(LOCAL_PATH)/audio/audio_effects.xml:system/etc/audio_effects.xml \
+    $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:system/etc/media_profiles_V1_0.xml
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
