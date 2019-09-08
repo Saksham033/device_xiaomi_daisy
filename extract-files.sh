@@ -59,3 +59,7 @@ if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
 fi
 
 "$MY_DIR"/setup-makefiles.sh
+
+# Load camera.msm8953.so shim
+CAM_SDM660="$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.msm8953.so
+patchelf --add-needed camera.msm8953_shim.so "$CAM_MSM8953"
