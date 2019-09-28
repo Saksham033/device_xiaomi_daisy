@@ -52,7 +52,7 @@ TARGET_KERNEL_CONFIG := daisy_defconfig
 TARGET_PROVIDES_KEYMASTER := true
 NEED_KERNEL_MODULE_SYSTEM := true
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+#  TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
   TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 endif
 
@@ -206,16 +206,14 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-05-05
 
 # We modify several neverallows, so let the build proceed
-ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
-endif
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
