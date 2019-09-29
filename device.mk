@@ -202,9 +202,9 @@ PRODUCR_PACKAGES += \
     fingerprintd
 
 # FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+#PRODUCT_PACKAGES += \
+#    FMRadio \
+#    libfmjni
 
 # FSTAB
 PRODUCT_COPY_FILES +=  device/xiaomi/daisy/rootdir/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
