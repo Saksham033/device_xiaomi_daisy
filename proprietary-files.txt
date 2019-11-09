@@ -2741,7 +2741,6 @@ etc/permissions/telephonyservice.xml
 etc/sysconfig/qti_whitelist.xml
 framework/embmslibrary.jar
 framework/qcrilhook.jar
-framework/qti-telephony-common.jar
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
@@ -2858,7 +2857,6 @@ lib/lib-imsvt.so
 lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
 lib/libdiag_system.so
-lib/libimscamera_jni.so
 lib/libimsmedia_jni.so
 lib/librcc.so
 lib/vendor.qti.ims.callinfo@1.0.so
@@ -2874,7 +2872,6 @@ lib64/lib-imsvt.so
 lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
 lib64/libdiag_system.so
-lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
 lib64/librcc.so
 lib64/vendor.qti.ims.callinfo@1.0.so
@@ -2883,7 +2880,6 @@ lib64/vendor.qti.imsrtpservice@1.0.so
 lib64/android.hardware.radio@1.0.so
 lib64/android.hardware.radio@1.1.so
 lib64/android.hardware.radio@1.2.so
--priv-app/ims/ims.apk
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
@@ -2942,6 +2938,12 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
+
+# Radio - IMS - from LA.UM.8.6.r1-01900-89xx.0
+product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
+product/lib64/libimsmedia_jni.so|e50217e9eb8878136614db66313508ac970a2b42
+-product/priv-app/ims/ims.apk|ce41daca328db67984843588e8bafa7e0eb53a0a
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb
 
 # Sensors
 vendor/bin/sensors.qti
