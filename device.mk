@@ -110,12 +110,13 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@5.0-impl \
     android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
-    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
@@ -431,6 +432,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
+    $(LOCAL_PATH)/permissions/com.qcom.fmradio.xml:system/etc/permissions/com.qcom.fmradio.xml
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm/arch-arm-armv7-a-neon/shared/vndk-core/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0-v27.so \
